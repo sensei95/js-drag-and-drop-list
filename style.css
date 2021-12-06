@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #333;
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.draggable {
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #000;
+  cursor: move;
+  margin-bottom: 1rem;
+}
+
+.draggable.dragging {
+  opacity: 0.5;
+}
+
+.draggable:last-child {
+  margin-bottom: 0;
+}
